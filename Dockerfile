@@ -1,6 +1,6 @@
 FROM alpine
 
 RUN apk update && \
-    apk add bash bind-tools curl 
+    apk add --no-cache bash bind-tools curl jq redis
 
 CMD tail -f /dev/null
